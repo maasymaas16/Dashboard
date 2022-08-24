@@ -42,27 +42,42 @@ ul {
 }
 
 .nav {
-    grid-column:2/3 ;
     grid-row: 2/3;
+}
+
+.nav, .settings {
+    grid-column:2/3 ;
     padding-left: 28px;
     margin-top: 0;
     font-size: 1.5em;
     text-align: left;
 }
 
-.nav > li {
+
+.nav > li, .settings > li {
     margin: 17px 0 ;
 }
 
-.navlogos {
+.settings {
+    grid-row: 3/4;
+}
+
+.navlogos, .settingslogos {
     grid-column: 1/2;
-    grid-row: 2/3;
     margin: 16px 0;
     margin-top: 0;
     padding-left: 20px;
 }
 
-.navlogos > li {
+.navlogos {
+    grid-row: 2/3;
+}
+
+.settingslogos {
+    grid-row: 3/4;
+}
+
+.navlogos > li, .settingslogos > li {
     margin: 16px 0;
 }
 
