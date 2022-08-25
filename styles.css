@@ -12,18 +12,7 @@ width: 99vw;
     overflow: hidden;
 }
 
-.header {
-    background-color: white;
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.information {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: #dbeafe;
-    box-shadow: inset 2px 2px 4px rgb(221, 216, 216);
-}
+ /* Sidebar sections Elements */
 
 .sidebar {
     grid-column: 1/2;
@@ -111,4 +100,42 @@ ul {
 
 .dashlogo, .dashtitle {
     margin-top: 16px;
+}
+
+/* Header section elements*/
+
+.header {
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    align-items: center;
+}
+
+.searchbar {
+    height: 2em;
+    width: 25vw;
+    border-radius: 0.75em;
+    background-color: #dbeafe;;
+    border: none;
+}
+
+.magnify {
+    height: 2em;
+    width: 2em;
+}
+
+.search {
+    display: flex;
+    gap: 2em;
+    margin-left: 2em;
+}
+/* Information section elements*/
+
+.information {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #dbeafe;
+    box-shadow: inset 2px 2px 4px rgb(221, 216, 216);
 }
