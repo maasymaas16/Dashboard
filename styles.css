@@ -7,13 +7,13 @@ width: 99vw;
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 6fr ;
+    grid-template: 1fr 4fr / minmax(250px,1fr) 5fr ;
     text-align: center;
+    overflow: hidden;
 }
 
 .header {
     background-color: white;
-    box-shadow: 0 4px 2px -2px black ;
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -22,7 +22,7 @@ width: 99vw;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: #dbeafe;
-
+    box-shadow: inset 2px 2px 4px rgb(221, 216, 216);
 }
 
 .sidebar {
