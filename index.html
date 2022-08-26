@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Nunito:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <div class="container">
     <header class="header">
         <div class="search">
-          <label for="searchfield"> <img class="magnify" src="magnify.png"/></label>
+          <label for="searchfield"> <img class="magnify" src="Icons/magnify.png"/></label>
           <input type="text" id="searchfield" class="searchbar">
         </div>
         <div class="greeting">
             <div class="profilepic">
-                <img  src="">
+                <img class="profilepic"  src="Icons/fallow-deer.svg">
             </div>
-            <p id="greeting">Hi there,</p>
-            <p id="profile-info">John Doe (@THEjDoe)</p>
+            <div class="greettext">
+                <p id="greeting">Hi there,</p>
+                <p id="profile-info">John Doe (@THEjDoe)</p>
+            </div>
+        </div>
+        <div class="headerbuttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
     </header>
 
@@ -28,7 +39,7 @@
     </div>
 
     <div class="sidebar">
-        <div class="dashlogo" ><img src="view-dashboard.png"></div>
+        <div class="dashlogo" ><img src="Icons/view-dashboard.png"></div>
         <div class="dashtitle">Dashboard</div>
         <ul class="nav">
             <li>Home</li>
@@ -39,12 +50,12 @@
             <li>Communities</li>
         </ul>
         <ul class="navlogos">
-            <li> <img class="sidelogos" src = "home-variant.png"/> </li>
-            <li> <img class="sidelogos" src = "card-account-details-outline.png"/> </li>
-            <li> <img class="sidelogos" src = "message-settings-outline.png"/> </li>
-            <li> <img class="sidelogos" src = "book-open-blank-variant.png"/> </li>
-            <li> <img class="sidelogos" src = "file.png"/> </li>
-            <li> <img class="sidelogos" src = "account-group.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/home-variant.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/card-account-details-outline.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/message-settings-outline.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/book-open-blank-variant.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/file.png"/> </li>
+            <li> <img class="sidelogos" src = "Icons/account-group.png"/> </li>
             
         </ul>
         <ul class="settings">
@@ -54,9 +65,9 @@
 
         </ul>
         <ul class="settingslogos">
-            <li> <img class="sidelogos" src="cog-outline.png"></li>
-            <li> <img class="sidelogos" src="chat-question-outline.png"></li>
-            <li> <img class="sidelogos" src="shield-check.png"></li>
+            <li> <img class="sidelogos" src="Icons/cog-outline.png"></li>
+            <li> <img class="sidelogos" src="Icons/chat-question-outline.png"></li>
+            <li> <img class="sidelogos" src="Icons/shield-check.png"></li>
         </ul>
 
     </div>
