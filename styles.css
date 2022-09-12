@@ -243,6 +243,7 @@ button:hover{
     box-shadow: inset 2px 2px 4px rgb(221, 216, 216);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
 
 .projects {
@@ -251,7 +252,7 @@ button:hover{
     grid-template: repeat(3, minmax(300px, 100%)) / repeat(2, minmax(400px, 100%));
     gap: 4em;
     margin-left: 2em;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 
@@ -301,6 +302,7 @@ overflow: hidden;
     padding: 2em;
     grid-column: 3/4;
     width: 300px;
+    overflow: hidden;
 }
 
 .announce-container  p, .announce-container  h3{
@@ -315,9 +317,10 @@ overflow: hidden;
 .trending {
     grid-column: 3/4;
     margin-left: 12em;
-    height: 100%;
+    height: auto;
     grid-row: 1/2;
     margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 .trend-cont {
@@ -328,6 +331,7 @@ overflow: hidden;
     padding: 2em;
     gap: 2em;
     width: 300px;
+    margin: 0;
 }
 
 .profileinfo {
@@ -359,4 +363,20 @@ overflow: hidden;
 
 .inforight h2 {
     margin-bottom: .5em;
+}
+
+.inforight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announce-container, .trend-cont {
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+#projects {
+    margin-bottom: .5em;
+    position: relative;
+    left: 1.5em;
 }
